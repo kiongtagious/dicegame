@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<link rel="stylesheet" type="text/css" href="dicegame.css">
+
+<style>
+div.dice{
+	float: left;
+	width:35px;
+	background:#F5F5F5;
+	border:#999 5px solid;
+	padding:10px;
+	font-size:24px;
+	text-align: center;
+	margin:5px;
+	border-radius:10px;
+	font-family: "Arial Black", Gadget, sans-serif;
+
+}
+
+.div2 {
+    width: 550px;
+    height: 350px;    
+    padding: 50px;
+    border: 10px solid black;
+    border-radius:15px;
+    background-color: oldlace;
+    font-family: "Arial Black", Gadget, sans-serif;
+    font-size: 80%;
+    float: left;
+}
+
+
+
+</style>
+<script>
+
+function rollDice(){
+    var die1 = document.getElementById("die1");
+    var die2 = document.getElementById("die2");
+    var die3 = document.getElementById("die3");
+    var die4 = document.getElementById("die4");
+
+    var status = document.getElementById("status");
+    var d1 = Math.floor(Math.random() * 8) + 1;
+    var d2 = Math.floor(Math.random() * 10) + 2;
+    var d3 = Math.floor(Math.random() * 12) + 3;
+    var d4 = Math.floor(Math.random() * 20) + 4;
+
+    var diceTotal = d1 + d2 + d3 + d4;
+    die1.innerHTML = d1;
+    die2.innerHTML = d2;
+    die3.innerHTML = d3;
+    die4.innerHTML = d4;
+    status.innerHTML = "";
+    if((d1 == d2) (d3 == d4)){
+        status.innerHTML += "";
+    }
+}
+
+function diceOne() {
+    document.getElementById("dice1").innerHTML = "D";
+}
+
+function diceTwo() {
+    document.getElementById("dice2").innerHTML = "I";
+}
+
+function diceThree() {
+    document.getElementById("dice3").innerHTML = "C";
+}
+
+function diceFour() {
+    document.getElementById("dice4").innerHTML = "E";
+}
+
+function diceFive() {
+    document.getElementById("dice5").innerHTML = "D";
+}
+
+function diceSix() {
+    document.getElementById("dice6").innerHTML = "!";
+}
+
+
+function diceOne1() {
+    document.getElementById("dice1one").innerHTML = "D";
+}
+
+function diceTwo2() {
+    document.getElementById("dice2two").innerHTML = "I";
+}
+
+function diceThree3() {
+    document.getElementById("dice3three").innerHTML = "C";
+}
+
+function diceFour4() {
+    document.getElementById("dice4four").innerHTML = "E";
+}
+
+function diceFive5() {
+    document.getElementById("dice5five").innerHTML = "D";
+}
+
+function diceSix6() {
+    document.getElementById("dice6six").innerHTML = "!";
+}
+
+
+</script>
+</head>
+<body>
+<IMG HEIGHT="75" WIDTH="200" SRC="C:\Users\kiong\Desktop\DiceGameProject\dcg.jpg">
+<center><img class="wiggle" src="C:\Users\kiong\Desktop\DiceGameProject\header.jpg"></center>
+<br>
+</br>
+<div class="main-content">
+ <img src="http://www.buzz50.com/media/kunena/attachments/23847/rolling-dice-gif-3.gif" alt="Headshot photo" style="float:center;margin:0 20px 20px 0;"</div>
+<br>
+</br>
+<br>
+</br>
+<br>
+</br>
+
+
+&nbsp;&nbsp;
+
+<div class="div2"><h1><i>What are the rules? Well... it's quite simple!</i></h1>
+
+<ul>
+  <li><h2>Both players take turn rolling all four dices. If any number you roll matches the bottom 6 numbers(4, 6, 8, 10, 12, 20), click on that number to reveal the letter. The first player to reveal the whole word wins!</h2></li>
+ 
+</ul>  </div>
+
+
+<input type=button value="Reset" onClick="window.location.reload()">
+
+<div id="die1" class="dice">0</div></right>
+<div id="die2" class="dice">0</div>
+<div id="die3" class="dice">0</div>
+<div id="die4" class="dice">0</div>
+<button onclick="rollDice()">Roll Dice</button>
+<h2 id="status" style="clear:right;"></h2>
+
+<br>
+</br>
+&nbsp;
+&nbsp;
+
+
+<br>
+</br>
+<h1>PLAYER 1</h1>
+<div id="die1" class="dice"><p id="dice1" onclick="diceOne()">4</p></div>
+<div id="die2" class="dice"><p id="dice2" onclick="diceTwo()">6</p></div>
+<div id="die3" class="dice"><p id="dice3" onclick="diceThree()">8</p></div>
+<div id="die4" class="dice"><p id="dice4" onclick="diceFour()">10</p></div>
+<div id="die5" class="dice"><p id="dice5" onclick="diceFive()">12</p></div>
+<div id="die6" class="dice"><p id="dice6" onclick="diceSix()">20</p></div>
+
+<br>
+</br>
+&nbsp;
+&nbsp;
+<br>
+</br>
+<br>
+</br>
+<br>
+</br>
+<h1>PLAYER 2</h1>
+<div id="die1" class="dice"><p id="dice1one" onclick="diceOne1()">4</p></div>
+<div id="die2" class="dice"><p id="dice2two" onclick="diceTwo2()">6</p></div>
+<div id="die3" class="dice"><p id="dice3three" onclick="diceThree3()">8</p></div>
+<div id="die4" class="dice"><p id="dice4four" onclick="diceFour4()">10</p></div>
+<div id="die5" class="dice"><p id="dice5five" onclick="diceFive5()">12</p></div>
+<div id="die6" class="dice"><p id="dice6six" onclick="diceSix6()">20</p></div>
+
+<br>
+</br>
+<br>
+</br>
+&nbsp;
+&nbsp;
+
+</body>
+</html>

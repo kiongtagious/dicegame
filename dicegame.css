@@ -1,0 +1,49 @@
+body {
+	background-color: white;
+    background-image: url("");
+
+}
+
+div.vertical-line{
+      width: 30px;
+      background-color: silver;
+      height: 100%;
+      float: center;
+      border: 2px ridge silver ;
+      border-radius: 10px;
+
+    }
+
+@-webkit-keyframes wiggle {
+	0% {
+		-webkit-transform:rotate(4deg);
+	}
+	50% {
+		-webkit-transform:rotate(-4deg);
+	}
+	100% {
+		-webkit-transform:rotate(4deg);
+	}
+}
+ 
+.wiggle:hover {
+	-webkit-animation: wiggle 0.5s infinite;
+}
+
+
+div {
+	text-align: center;
+	vertical-align: middle;
+}
+
+h1 {
+	font-family: "Arial Black", Gadget, sans-serif;
+}
+
+
+.main-content img {
+   float: left;
+   padding: 0 20px 20px 0;
+   height: 600px;
+   width: 500px;
+}
